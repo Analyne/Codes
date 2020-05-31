@@ -1,10 +1,10 @@
 variable "name" {
-  type = string
+  type = string 
   description = "Azure server_name"
   }
 
 variable "location" {
-  type = string
+  type = String
   description = "Azure location"
   }
  
@@ -19,12 +19,18 @@ variable "location" {
   }
   
   variable "tags" {
-  description = "The tags to associate with your network and subnets."
+  description = "Tag"
   type        = map(string)
 
   default = {}
 }
 
 variable "resourcegroupname" {
+  type = string
   description = "The name of an existing resource group to be imported."
+}
+
+variable "version" {
+  type = string
+  description ="version"
 }
