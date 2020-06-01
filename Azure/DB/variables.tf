@@ -1,3 +1,4 @@
+
 variable "name" {
   type = string
   description = "Azure name"
@@ -8,7 +9,7 @@ variable "location" {
   description = "Azure location"
   }
  
- variable "servername" {
+ variable "server_name" {
      type = string
 	 description = "Azure servername"
   }
@@ -30,9 +31,19 @@ variable "location" {
   default = {}
 }
 
-variable "resourcegroupname"{
-
+variable "resource_group_name"{
   type = string
+  description ="Azure resourcegroup"
+}
+
+variable "zone_redundant"{
+  type = string
+  description ="Azure zone redundant"
+}
+
+variable "max_size_gb"{
+  type = string
+  description = "Azure max size in GB"
 }
 
 

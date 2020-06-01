@@ -1,10 +1,10 @@
 variable "name" {
-  type = string 
+  type = string
   description = "Azure server_name"
   }
 
 variable "location" {
-  type = String
+  type = string
   description = "Azure location"
   }
  
@@ -30,7 +30,7 @@ variable "resourcegroupname" {
   description = "The name of an existing resource group to be imported."
 }
 
-variable "version" {
+variable "edition" {
   type = string
   description ="version"
 }
